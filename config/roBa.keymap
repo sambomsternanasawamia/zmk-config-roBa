@@ -83,7 +83,7 @@
 &kp Q           &kp W         &kp E      &kp R      &kp T                                                &kp Y      &kp U  &kp I      &kp O    &kp P
 &kp A           &kp S         &kp D      &kp F      &kp G        &lt 5 LEFT_WIN          &kp BACKSPACE   &kp H      &kp J  &kp K      &kp L    &kp MINUS
 &kp Z           &kp X         &kp C      &kp V      &kp B        &kp F2                  &kp DELETE      &kp N      &kp M  &kp COMMA  &kp DOT  &kp SLASH
-&kp LEFT_SHIFT  &kp LEFT_ALT  &lt 1 TAB  &kp LCTRL  &lt 1 SPACE  &lt 2 INT_MUHENKAN      &lt 3 INT_KANA  &kp ENTER                             &kp RIGHT_SHIFT
+&kp LEFT_SHIFT  &kp LEFT_ALT  &lt 1 TAB  &kp LCTRL  &lt 1 SPACE  &lt 2 INT_MUHENKAN      &lt 3 INT_KANA  &kp ENTER                             &kp F4
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
@@ -100,10 +100,10 @@
 
         NUM {
             bindings = <
-&kp MINUS  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PLUS                                                   &kp CARET         &kp AMPERSAND      &kp APOS        &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
-&kp SLASH  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp ASTERISK  &kp LC(LA(KP_NUMBER_0))      &kp UNDERSCORE  &kp EXCLAMATION   &kp AT_SIGN        &kp HASH        &kp DOLLAR            &kp PERCENT
-&trans     &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp PERIOD    &kp EQUAL                    &kp TILDE       &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE       &kp BACKSLASH
-&trans     &trans           &kp KP_NUMBER_0  &trans           &trans        &trans                       &trans          &trans                                                                     &kp PIPE
+&kp MINUS  &kp N1  &kp N2  &kp N3  &kp PLUS                                                    &kp CARET      &kp AMPERSAND  &kp APOS          &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
+&kp SLASH  &kp N4  &kp N5  &kp N6  &kp ASTERISK  &kp LC(LA(KP_NUMBER_0))      &kp UNDERSCORE   &kp SLASH      &kp AT_SIGN    &kp HASH          &kp LEFT_BRACKET      &kp RIGHT_BRACKET
+&trans     &kp N7  &kp N8  &kp N9  &kp PERIOD    &kp EQUAL                    &kp TILDE        &kp BACKSLASH  &kp LESS_THAN  &kp GREATER_THAN  &kp LEFT_BRACE        &kp RIGHT_BRACE
+&trans     &trans  &kp N0  &trans  &trans        &trans                       &kp EXCLAMATION  &kp QUESTION                                                          &kp PIPE
             >;
         };
 
