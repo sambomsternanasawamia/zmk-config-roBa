@@ -100,10 +100,10 @@
 
         NUM {
             bindings = <
-&kp MINUS    &kp N1  &kp N2  &kp N3  &kp RS(SEMI)                                                         &kp LEFT_BRACE  &kp AT_SIGN       &kp LEFT_BRACE    &kp RIGHT_BRACKET  &kp BACKSLASH
-&kp SLASH    &kp N4  &kp N5  &kp N6  &kp LS(DOUBLE_QUOTES)  &kp LC(LA(KP_NUMBER_0))      &kp APOSTROPHE   &kp SLASH       &kp LEFT_BRACKET  &kp HASH          &kp RS(F8)         &kp RS(F9)
-&kp PERCENT  &kp N7  &kp N8  &kp N9  &kp PERIOD             &kp LS(MINUS)                &kp SEMI         &kp INT_YEN     &kp LESS_THAN     &kp GREATER_THAN  &kp RIGHT_BRACE    &kp PIPE
-&trans       &trans  &kp N0  &trans  &trans                 &trans                       &kp EXCLAMATION  &kp QUESTION                                                           &kp INT_RO
+&kp MINUS    &kp N1  &kp N2  &kp N3  &kp RS(SEMI)                                                         &kp RS(N7)    &kp AT_SIGN       &kp LEFT_BRACE    &kp RIGHT_BRACKET  &kp BACKSLASH
+&kp SLASH    &kp N4  &kp N5  &kp N6  &kp LS(DOUBLE_QUOTES)  &kp LC(LA(KP_NUMBER_0))      &kp APOSTROPHE   &kp SLASH     &kp LEFT_BRACKET  &kp HASH          &kp RS(N8)         &kp RS(N9)
+&kp PERCENT  &kp N7  &kp N8  &kp N9  &kp PERIOD             &kp LS(MINUS)                &kp SEMI         &kp INT_YEN   &kp LESS_THAN     &kp GREATER_THAN  &kp RIGHT_BRACE    &kp PIPE
+&trans       &trans  &kp N0  &trans  &trans                 &trans                       &kp EXCLAMATION  &kp QUESTION                                                         &kp INT_RO
             >;
         };
 
