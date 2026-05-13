@@ -92,8 +92,8 @@
             bindings = <
 &kp F1        &kp F2        &kp F3        &kp F4        &kp F5                                     &kp F6        &kp F7      &kp F8      &kp F9      &kp F10
 &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5       &trans            &kp F12     &kp NUMBER_6  &kp N7      &kp N8      &kp N9      &kp N0
-&kp EXCL      &kp AT        &kp HASH      &kp DOLLAR    &kp PERCENT  &kp QUESTION      &trans      &kp CARET     &kp RS(N7)  &kp RS(N8)  &kp RS(N9)  &kp TILDE
-&trans        &kp SLASH     &kp INT3      &trans        &trans       &trans            &kp RA(F4)  &kp ESCAPE                                        &kp RS(INT1)
+&kp EXCL      &kp AT        &kp HASH      &kp DOLLAR    &kp PERCENT  &kp QUESTION      &kp ESCAPE  &kp CARET     &kp RS(N7)  &kp RS(N8)  &kp RS(N9)  &kp TILDE
+&trans        &kp SLASH     &kp INT3      &trans        &trans       &trans            &trans      &trans                                            &kp RS(INT1)
             >;
         };
 
