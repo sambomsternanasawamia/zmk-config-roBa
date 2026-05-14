@@ -85,7 +85,7 @@
 &kp LEFT_SHIFT  &kp TAB  &kp LCTRL  &kp LEFT_ALT  &lt 1 SPACE  &mkp MB1          &mkp MB2       &lt 2 ENTER                             &kp RIGHT_SHIFT
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
+            sensor-bindings = <&inc_dec_kp C_VOLUME_DOWN C_VOLUME_UP>;
         };
 
         FUNCTION_NUM {
