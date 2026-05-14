@@ -47,6 +47,11 @@
             bindings = <&kp LS(LG(LEFT))>;
             key-positions = <39 40>;
         };
+
+        escape {
+            bindings = <&kp ESCAPE>;
+            key-positions = <14 17>;
+        };
     };
 
     macros {
