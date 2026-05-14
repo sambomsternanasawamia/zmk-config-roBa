@@ -28,29 +28,24 @@
     combos {
         compatible = "zmk,combos";
 
-        tab {
-            bindings = <&kp TAB>;
-            key-positions = <11 12>;
+        force_quit {
+            bindings = <&kp LA(F4)>;
+            key-positions = <4 5>;
         };
 
-        shift_tab {
-            bindings = <&kp LS(TAB)>;
-            key-positions = <12 13>;
+        int_muhenkan {
+            bindings = <&kp INT_MUHENKAN>;
+            key-positions = <13 12>;
         };
 
-        muhennkann {
-            bindings = <&to_layer_0 INT_MUHENKAN>;
-            key-positions = <11 10>;
+        int_kana {
+            bindings = <&kp INT2>;
+            key-positions = <18 19>;
         };
 
-        double_quotation {
-            bindings = <&kp DOUBLE_QUOTES>;
-            key-positions = <20 21>;
-        };
-
-        eq {
-            bindings = <&kp EQUAL>;
-            key-positions = <24 25>;
+        screen_change {
+            bindings = <&kp LS(LG(LEFT))>;
+            key-positions = <39 40>;
         };
     };
 
@@ -80,7 +75,7 @@
         default_layer {
             bindings = <
 &kp Q           &kp W    &kp E      &kp R         &kp T                                         &kp Y        &kp U  &kp I      &kp O    &kp P
-&kp A           &kp S    &kp D      &kp F         &kp G        &lt 4 K_MUTE      &kp BACKSPACE  &kp H        &kp J  &kp K      &kp L    &lt 3 MINUS
+&kp A           &kp S    &kp D      &kp F         &kp G        &kp K_MUTE        &kp BACKSPACE  &kp H        &kp J  &kp K      &kp L    &lt 3 MINUS
 &kp Z           &kp X    &kp C      &kp V         &kp B        &kp LEFT_GUI      &kp DELETE     &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
 &kp LEFT_SHIFT  &kp TAB  &kp LCTRL  &kp LEFT_ALT  &lt 1 SPACE  &mkp MB1          &mkp MB2       &lt 2 ENTER                             &kp RIGHT_SHIFT
             >;
@@ -92,17 +87,17 @@
             bindings = <
 &kp F1        &kp F2        &kp F3        &kp F4        &kp F5                                              &kp F6        &kp F7      &kp F8      &kp F9      &kp F10
 &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5       &trans            &kp F12              &kp NUMBER_6  &kp N7      &kp N8      &kp N9      &kp N0
-&kp EXCL      &kp AT        &kp HASH      &kp DOLLAR    &kp PERCENT  &kp QUESTION      &kp ESCAPE           &kp CARET     &kp RS(N7)  &kp RS(N8)  &kp RS(N9)  &kp TILDE
+&kp EXCL      &kp AT        &kp HASH      &kp DOLLAR    &kp PERCENT  &kp QUESTION      &kp ESCAPE           &kp CARET     &kp RS(N7)  &kp RS(N8)  &kp RS(N9)  &kp EQUAL
 &trans        &trans        &kp INT3      &trans        &trans       &trans            &kp INTERNATIONAL_5  &kp INT2                                          &trans
             >;
         };
 
         ARROW {
             bindings = <
-&trans  &kp PG_UP       &kp UP_ARROW    &kp PAGE_DOWN    &trans                                                 &kp RG(UP_ARROW)  &kp RC(PAGE_UP)  &kp RC(PAGE_DOWN)  &kp LBKT               &kp RBKT
-&trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp LC(UP_ARROW)  &trans             &kp RG(LEFT)      &kp RG(DOWN)      &kp RG(RIGHT)    &kp RS(SEMI)       &kp RS(DOUBLE_QUOTES)  &kp BSLH
-&trans  &trans          &trans          &kp LC(LEFT)     &kp LC(DOWN)      &kp LC(RIGHT)      &kp RS(RG(LEFT))  &kp SEMI          &kp APOS         &kp LESS_THAN      &kp GREATER_THAN       &kp RS(INTERNATIONAL_1)
-&trans  &trans          &trans          &trans           &mkp MB4          &mkp MB5           &trans            &trans                                                                       &trans
+&trans  &kp PG_UP       &kp UP_ARROW    &kp PAGE_DOWN    &trans                                             &kp RG(UP_ARROW)  &kp RC(PAGE_UP)  &kp RC(PAGE_DOWN)  &kp LBKT               &kp RBKT
+&trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp LC(UP_ARROW)  &trans             &kp RG(LEFT)  &kp RG(DOWN)      &kp RG(RIGHT)    &kp RS(SEMI)       &kp RS(DOUBLE_QUOTES)  &kp BSLH
+&trans  &trans          &trans          &kp LC(LEFT)     &kp LC(DOWN)      &kp LC(RIGHT)      &trans        &kp SEMI          &kp APOS         &kp LESS_THAN      &kp GREATER_THAN       &kp RS(INTERNATIONAL_1)
+&trans  &trans          &trans          &trans           &mkp MB4          &mkp MB5           &trans        &trans                                                                       &trans
             >;
         };
 
@@ -122,6 +117,15 @@
 &trans  &trans  &trans  &trans  &trans  &trans      &bootloader  &trans        &trans        &trans        &trans        &bt BT_CLR
 &trans  &trans  &trans  &trans  &trans  &trans      &trans       &trans                                                  &bt BT_CLR_ALL
             >;
+        };
+    };
+
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+
+        bluetooth_switch {
+            if-layers = <1 2>;
+            then-layer = <4>;
         };
     };
 };
