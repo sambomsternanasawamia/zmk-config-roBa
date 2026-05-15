@@ -97,7 +97,7 @@
 &trans  &kp PG_UP          &kp UP_ARROW              &kp PAGE_DOWN    &trans                                             &kp RG(UP_ARROW)  &kp RC(PAGE_UP)  &kp RC(PAGE_DOWN)  &kp LBKT               &kp RBKT
 &trans  &kp LEFT_ARROW     &kp DOWN_ARROW            &kp RIGHT_ARROW  &kp LC(UP_ARROW)  &trans             &kp RG(LEFT)  &kp RG(DOWN)      &kp RG(RIGHT)    &kp RS(SEMI)       &kp RS(DOUBLE_QUOTES)  &kp BSLH
 &trans  &kp LC(LS(LA(C)))  &kp LS(LC(GREATER_THAN))  &kp LC(LEFT)     &kp LC(DOWN)      &kp LC(RIGHT)      &kp ESCAPE    &kp SEMI          &kp APOS         &kp LESS_THAN      &kp GREATER_THAN       &kp RS(INTERNATIONAL_1)
-&trans  &trans             &trans                    &trans           &mkp MB4          &mkp MB5           &trans        &trans                                                                       &trans
+&trans  &trans             &trans                    &kp LC(LS(N9))   &mkp MB4          &mkp MB5           &trans        &trans                                                                       &trans
             >;
         };
 
