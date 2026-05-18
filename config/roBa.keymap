@@ -28,24 +28,14 @@
     combos {
         compatible = "zmk,combos";
 
-        int_muhenkan {
-            bindings = <&kp INT_MUHENKAN>;
-            key-positions = <13 12>;
-        };
-
-        int_kana {
-            bindings = <&kp INT2>;
-            key-positions = <18 19>;
-        };
-
         screen_change {
             bindings = <&kp LS(LG(LEFT))>;
             key-positions = <39 40>;
         };
 
-        escape {
-            bindings = <&kp ESCAPE>;
-            key-positions = <14 17>;
+        screenshot {
+            bindings = <&kp LG(LS(S))>;
+            key-positions = <15 16>;
         };
     };
 
