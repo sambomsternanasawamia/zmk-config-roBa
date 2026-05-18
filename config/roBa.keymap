@@ -74,18 +74,18 @@
         FUNCTION_NUM {
             bindings = <
 &kp F1        &kp F2        &kp F3        &kp F4        &kp F5                                           &kp F6        &kp F7      &kp F8      &kp F9      &kp F10
-&kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5       &kp F12           &trans            &kp NUMBER_6  &kp N7      &kp N8      &kp N9      &kp N0
-&kp EXCL      &kp AT        &kp HASH      &kp DOLLAR    &kp PERCENT  &kp QUESTION      &trans            &kp CARET     &kp RS(N7)  &kp RS(N8)  &kp RS(N9)  &kp EQUAL
+&kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5       &trans            &trans            &kp NUMBER_6  &kp N7      &kp N8      &kp N9      &kp N0
+&kp EXCL      &kp AT        &kp HASH      &kp DOLLAR    &kp PERCENT  &kp QUESTION      &kp F12           &kp CARET     &kp RS(N7)  &kp RS(N8)  &kp RS(N9)  &kp EQUAL
 &trans        &trans        &trans        &trans        &trans       &trans            &kp INT_MUHENKAN  &kp INT2                                          &trans
             >;
         };
 
         ARROW {
             bindings = <
-&trans  &kp PG_UP          &kp UP_ARROW              &kp PAGE_DOWN    &trans                                             &kp RG(UP_ARROW)  &kp RC(PAGE_UP)  &kp RC(PAGE_DOWN)  &kp LBKT               &kp RBKT
-&trans  &kp LEFT_ARROW     &kp DOWN_ARROW            &kp RIGHT_ARROW  &kp LC(UP_ARROW)  &trans             &kp RG(LEFT)  &kp RG(DOWN)      &kp RG(RIGHT)    &kp RS(SEMI)       &kp RS(DOUBLE_QUOTES)  &kp BSLH
-&trans  &kp LC(LS(LA(C)))  &kp LS(LC(GREATER_THAN))  &kp LC(LEFT)     &kp LC(DOWN)      &kp LC(RIGHT)      &kp ESCAPE    &kp SEMI          &kp APOS         &kp LESS_THAN      &kp GREATER_THAN       &kp RS(INTERNATIONAL_1)
-&trans  &trans             &trans                    &trans           &mkp MB4          &mkp MB5           &trans        &trans                                                                       &trans
+&kp LC(LS(LA(C)))     &kp PG_UP       &kp UP_ARROW              &kp PAGE_DOWN    &trans                                             &kp RG(UP_ARROW)  &kp RC(PAGE_UP)  &kp RC(PAGE_DOWN)  &kp LBKT               &kp RBKT
+&kp LS(GREATER_THAN)  &kp LEFT_ARROW  &kp DOWN_ARROW            &kp RIGHT_ARROW  &kp LC(UP_ARROW)  &trans             &kp RG(LEFT)  &kp RG(DOWN)      &kp RG(RIGHT)    &kp RS(SEMI)       &kp RS(DOUBLE_QUOTES)  &kp BSLH
+&kp LC(LS(N9))        &trans          &kp LS(LC(GREATER_THAN))  &kp LC(LEFT)     &kp LC(DOWN)      &kp LC(RIGHT)      &kp ESCAPE    &kp SEMI          &kp APOS         &kp LESS_THAN      &kp GREATER_THAN       &kp RS(INTERNATIONAL_1)
+&trans                &trans          &trans                    &trans           &mkp MB4          &mkp MB5           &trans        &trans                                                                       &trans
             >;
         };
 
