@@ -82,10 +82,10 @@
 
         ARROW {
             bindings = <
-&kp LC(LS(LA(C)))         &kp PG_UP       &kp UP_ARROW              &kp PAGE_DOWN    &trans                                             &kp RG(UP_ARROW)  &kp RC(PAGE_UP)  &kp RC(PAGE_DOWN)  &kp LBKT               &kp RBKT
-&kp LS(LC(GREATER_THAN))  &kp LEFT_ARROW  &kp DOWN_ARROW            &kp RIGHT_ARROW  &kp LC(UP_ARROW)  &trans             &kp RG(LEFT)  &kp RG(DOWN)      &kp RG(RIGHT)    &kp RS(SEMI)       &kp RS(DOUBLE_QUOTES)  &kp BSLH
-&kp LC(LS(C))             &trans          &kp LS(LC(GREATER_THAN))  &kp LC(LEFT)     &kp LC(DOWN)      &kp LC(RIGHT)      &kp ESCAPE    &kp SEMI          &kp APOS         &kp LESS_THAN      &kp GREATER_THAN       &kp RS(INTERNATIONAL_1)
-&trans                    &trans          &trans                    &trans           &mkp MB4          &mkp MB5           &trans        &trans                                                                       &trans
+&kp LC(LS(LA(C)))         &kp PG_UP       &kp UP_ARROW    &kp PAGE_DOWN    &trans                                             &kp RG(UP_ARROW)  &kp RC(PAGE_UP)  &kp RC(PAGE_DOWN)  &kp LBKT               &kp RBKT
+&kp LS(LC(GREATER_THAN))  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp LC(UP_ARROW)  &trans             &kp RG(LEFT)  &kp RG(DOWN)      &kp RG(RIGHT)    &kp RS(SEMI)       &kp RS(DOUBLE_QUOTES)  &kp BSLH
+&kp LC(LS(C))             &trans          &trans          &kp LC(LEFT)     &kp LC(DOWN)      &kp LC(RIGHT)      &kp ESCAPE    &kp SEMI          &kp APOS         &kp LESS_THAN      &kp GREATER_THAN       &kp RS(INTERNATIONAL_1)
+&trans                    &trans          &trans          &trans           &mkp MB4          &mkp MB5           &trans        &trans                                                                       &trans
             >;
         };
 
